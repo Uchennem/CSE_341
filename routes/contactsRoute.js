@@ -4,7 +4,7 @@ const { ObjectId } = require('mongodb');
 
 const router = express.Router();
 
-// GET all contacts from CSE341 collection and contacts table
+// GET all contacts from CSE_341 collection and contacts table
 router.get('/company', async (req, res) => {
     try {
         const db = getDb();

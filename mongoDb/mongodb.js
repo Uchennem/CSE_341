@@ -4,7 +4,7 @@ require('dotenv').config();
 let db;
 
 async function initDb(callback) {
-    const uri = process.env.MONGODB;
+    const uri = process.env.MONGODB_URI;
 
     // Append the database name to the URI
     const uriWithDb = `${uri}CSE_341`;
