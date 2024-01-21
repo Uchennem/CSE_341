@@ -1,0 +1,15 @@
+###
+GET http://localhost:3000/company
+###
+
+GET http://localhost:3000/company/65ac4758886bf29154e5f06e
+
+# for render
+
+###
+GET https://cse341-web-services-30a6.onrender.com/company
+
+###
+
+GET https://cse341-web-services-30a6.onrender.com/company/65ac4963886bf29154e5f070
+
