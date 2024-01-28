@@ -1,0 +1,78 @@
+#Local host
+
+## Read all contacts
+GET http://localhost:3000/contacts
+
+###
+
+# Create a new contact
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Jack",
+  "lastName": "RipperLH",
+  "email": "jackdripper@email.com",
+  "favoriteColor": "Pearly White",
+  "birthday": "01/01/1899"
+}
+
+###
+
+# Update a contact
+PUT http://localhost:3000/contacts/65b5bf609204aa89b26ff1d3
+
+Content-Type: application/json
+
+{
+  
+  "birthday": "21/07/1851"
+}
+
+###
+
+# Delete a contact
+DELETE http://localhost:3000/contacts/65b5aaa3cd16244068c37370
+
+
+
+
+###
+# Read all contacts
+GET https://cse341-web-services-30a6.onrender.com/contacts
+
+###
+
+# Create a new contact
+POST https://cse341-web-services-30a6.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Jack",
+  "lastName": "RipperOR",
+  "email": "jackdripper@email.com",
+  "favoriteColor": "Pearly White",
+  "birthday": "01/01/1899"
+}
+
+###
+
+
+# Update a contact
+PUT https://cse341-web-services-30a6.onrender.com/contacts/65b5bc0ca9be66224e5a0052
+
+Content-Type: application/json
+
+{
+  
+  "firstName": "Jack",
+  "lastName": "RipperLH",
+  "email": "jackdripper@email.com",
+  "favoriteColor": "Pearly White",
+  "birthday": "21/07/1850"
+}
+
+###
+
+# Delete a contact
+DELETE https://cse341-web-services-30a6.onrender.com/contacts/65b5c129a9be66224e5a0055
