@@ -49,7 +49,7 @@ Content-Type: application/json
 
 {
   "firstName": "Jack",
-  "lastName": "RipperOR",
+  "lastName": "Rip",
   "email": "jackdripper@email.com",
   "favoriteColor": "Pearly White",
   "birthday": "01/01/1899"
@@ -59,18 +59,17 @@ Content-Type: application/json
 
 
 # Update a contact
-PUT https://cse341-web-services-30a6.onrender.com/contacts/65b5bc0ca9be66224e5a0052
-
+PUT http://localhost:3000/contacts/65b96724759de5de66564b90
 Content-Type: application/json
 
 {
-  
   "firstName": "Jack",
-  "lastName": "RipperLH",
+  "lastName": "Rip",
   "email": "jackdripper@email.com",
   "favoriteColor": "Pearly White",
-  "birthday": "21/07/1850"
+  "birthday": "01/01/1899"
 }
+
 
 ###
 
