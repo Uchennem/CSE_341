@@ -9,7 +9,7 @@ async function initDb(callback) {
     // Append the database name to the URI
     const uriWithDb = `${uri}CSE_341`;
 
-    const client = new MongoClient(uriWithDb, { useNewUrlParser: true, useUnifiedTopology: true });
+    const client = new MongoClient(uriWithDb);
 
     try {
         await client.connect();
