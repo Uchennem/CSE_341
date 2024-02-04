@@ -5,22 +5,15 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "cse341-web-services-30a6.onrender.com",
+  "host": ["localhost:3000"],
   "basePath": "/",
   "schemes": [
-    "http","https"
+    "http"
   ],
   "paths": {
     "/": {
       "get": {
         "description": "",
-        "parameters": [
-          {
-            "name": "origin",
-            "in": "header",
-            "type": "string"
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -31,13 +24,6 @@
     "/spa": {
       "get": {
         "description": "",
-        "parameters": [
-          {
-            "name": "origin",
-            "in": "header",
-            "type": "string"
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -48,13 +34,6 @@
     "/contacts": {
       "get": {
         "description": "",
-        "parameters": [
-          {
-            "name": "origin",
-            "in": "header",
-            "type": "string"
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -67,11 +46,6 @@
       "post": {
         "description": "",
         "parameters": [
-          {
-            "name": "origin",
-            "in": "header",
-            "type": "string"
-          },
           {
             "name": "body",
             "in": "body",
@@ -116,11 +90,6 @@
             "in": "path",
             "required": true,
             "type": "string"
-          },
-          {
-            "name": "origin",
-            "in": "header",
-            "type": "string"
           }
         ],
         "responses": {
@@ -142,11 +111,6 @@
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
-          },
-          {
-            "name": "origin",
-            "in": "header",
             "type": "string"
           },
           {
@@ -194,11 +158,6 @@
             "in": "path",
             "required": true,
             "type": "string"
-          },
-          {
-            "name": "origin",
-            "in": "header",
-            "type": "string"
           }
         ],
         "responses": {
@@ -214,5 +173,9 @@
         }
       }
     }
-  }
+  },
+  "scheme": [
+    "http",
+    "https"
+  ]
 }

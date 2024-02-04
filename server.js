@@ -11,16 +11,16 @@ const port = process.env.PORT || 3000;
 // Middleware to parse JSON bodies
 app.use(express.json());
 
-// Define the origins you want to allow
-const allowedOrigins = ['http://localhost:3000', 'https://cse341-web-services-30a6.onrender.com'];
-
 
 // Add support for CORS
 app.use((req, res, next) => {
+  const allowedOrigins = ['http://localhost:3000', 'cse341-web-services-30a6.onrender.com']; // Add your allowed origins here
   const origin = req.headers.origin;
+
   if (allowedOrigins.includes(origin)) {
-      res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Access-Control-Allow-Origin', origin);
   }
+  
   res.setHeader(
     'Access-Control-Allow-Headers',
     'Origin, X-Requested-With, Content-Type, Accept'
