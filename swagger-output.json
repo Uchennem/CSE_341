@@ -8,7 +8,7 @@
   "host": ["cse341-web-services-30a6.onrender.com"],
   "basePath": "/",
   "schemes": [
-    "http", "https"
+    "http"
   ],
   "paths": {
     "/": {

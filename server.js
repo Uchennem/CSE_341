@@ -14,13 +14,7 @@ app.use(express.json());
 
 // Add support for CORS
 app.use((req, res, next) => {
-  const allowedOrigins = ['http://localhost:3000', 'cse341-web-services-30a6.onrender.com']; // Add your allowed origins here
-  const origin = req.headers.origin;
-
-  if (allowedOrigins.includes(origin)) {
-    res.setHeader('Access-Control-Allow-Origin', origin);
-  }
-  
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
     'Access-Control-Allow-Headers',
     'Origin, X-Requested-With, Content-Type, Accept'
