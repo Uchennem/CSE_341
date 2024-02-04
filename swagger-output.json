@@ -5,10 +5,10 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": ["localhost:3000"],
+  "host": ["cse341-web-services-30a6.onrender.com"],
   "basePath": "/",
   "schemes": [
-    "http"
+    "http", "https"
   ],
   "paths": {
     "/": {
